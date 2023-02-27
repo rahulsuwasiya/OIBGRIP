@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--LINK CSS FILE-->    
-    <link rel="stylesheet" href="style.css" />
-    <title>Temperature Converter App</title>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
     <div class="container">
-      <div class="temperature-converter">
-          <h1 class="title">Temperature Converter</h1>
-          <div class="result">
-            <span class="result-heading">Result</span>
-            <h2 class="celsius-value" id="celsius"></h2>
-          </div>
-          <div class="degree-type">
-            <div class="degree-field">
-              <label for="degree">Degrees</label>
-              <input type="number" name="degree" id="degree" />
+        <div class="task-bar">
+            <div id="p1"></div>
+            <div class="icons">
+                <i class="bi bi-bell-slash-fill"></i>
+                <i class="bi bi-bluetooth"></i>
+                <i class="bi bi-battery-charging"></i>
             </div>
-            <div class="temp-field">
-              <label for="temp-type">Type</label>
-              <select name="temperatures" id="temp-type" autocomplete="on">
-                <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>	
-                <option id="kelvin" value="kelvin">Kelvin</option>
-              </select>
+        </div>
+        <h1>Temperature Converter</h1>
+        <div class="inputs">
+            <div style="display: flex;
+            flex-direction: column;">
+                <label for="degree">Value <span id="small">(In Numbers...)</span></label>
+                <input type="number" name="degree" id="inputValue" required>
             </div>
-          </div>
-          <button id="convert-btn">Convert</button>
-      </div>
+            <div class="inptsss">
+                <div>
+                    <label for="type">From</label>
+                    <select name="type" id="type1">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    
+                    </select>
+                </div>
+                <div>
+                    <label for="type">To</label>
+                    <select name="type" id="type2">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                       
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="btn" onclick="temperature()">Convert</button>
+        <div class="resultss">
+            <label for="result">Result</label>
+            <div id="result"></div>
+        </div>
     </div>
-    <!--LINK JAVASCRIPT FILE-->
-    <script src="./script.js"></script>
-  </body>
+    <div class="footer">
+        <p>Designed by <a href="https://www.linkedin.com/feed/update/urn:li:activity:7035820256489029632/?commentUrn=urn%3Ali%3Acomment%3A(ugcPost%3A7035820008232366080%2C7035823736612085760)&dashCommentUrn=urn%3Ali%3Afsd_comment%3A(7035823736612085760%2Curn%3Ali%3AugcPost%3A7035820008232366080)">Rahul Suwasiya</a></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
 </html>
