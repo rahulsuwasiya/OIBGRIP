@@ -13,7 +13,7 @@
       <div class="temperature-converter">
           <h1 class="title">Temperature Converter</h1>
           <div class="result">
-            <span class="result-heading">Result</span>
+            <span class="result-heading">Result (Celsius)</span>
             <h2 class="celsius-value" id="celsius"></h2>
           </div>
           <div class="degree-type">
@@ -24,7 +24,7 @@
             <div class="temp-field">
               <label for="temp-type">Type</label>
               <select name="temperatures" id="temp-type" autocomplete="on">
-                <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>	
+                <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
                 <option id="kelvin" value="kelvin">Kelvin</option>
               </select>
             </div>
